@@ -1,0 +1,5 @@
+streamlit 
+google-generativeai
+psycopg2-binary
+python-dotenv
+markdown

@@ -17,11 +17,11 @@ Built using **Streamlit**, **Gemini Pro (via Google Generative AI)**, and **psyc
 
 ## 📁 Project Structure
 
-- app.py # Main Streamlit frontend application
-- query_agent.py # Gemini-based query and response logic
-- sql.py # PostgreSQL connection and helper functions
-- requirements.txt # Python dependencies
-- .env # Environment variables (user-provided, not committed)
+- app.py
+- query_agent.py
+- sql.py
+- requirements.txt
+- .env # Environment variables
 
 
 ## ⚙️ Features

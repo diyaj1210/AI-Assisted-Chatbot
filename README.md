@@ -32,5 +32,8 @@ Built using **Streamlit**, **Gemini Pro (via Google Generative AI)**, and **psyc
 - Markdown to HTML table formatting
 - Safe SQL execution and sanitization
 
+## 📦 Dataset
+This project uses the Pagila PostgreSQL dataset, a rich sample schema for DVD rental businesses.
+
 ## 📜 License
 This project is licensed under the MIT License.

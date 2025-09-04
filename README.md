@@ -1,39 +1,90 @@
-# AI-Assisted-Chatbot
+# AI-Assisted Chatbot
 
-A conversational AI-powered chatbot that translates natural language questions into SQL queries, interacts with a PostgreSQL database, and presents results in a clean, user-friendly interface — powered by Google Gemini's LLM.
+This project implements an AI-powered chatbot that can process user queries and interact with a SQL database.  
+It provides a simple interface to run natural language queries and fetch structured responses.
 
+---
 
-## 🧠 Project Overview
+## 📂 Project Structure
 
-This chatbot enables users to query a PostgreSQL database using simple English. It:
-- Converts natural language questions into PostgreSQL-compatible SQL.
-- Retrieves and formats query results from your database.
-- Displays answers in a user-friendly table or summary.
-- Maintains chat history and suggests helpful follow-up queries.
-- Offers both light and dark themes for an enhanced UX.
+AI-Assisted-Chatbot-main/
+│── app.py # Main entry point to run the chatbot
+│── query_agent.py # Core logic for handling user queries
+│── sql.py # SQL helper functions for database interaction
+│── requirements.txt # Python dependencies
+│── .env # Environment variables (API keys, DB configs)
+│── README.md # Project documentation
 
-Built using **Streamlit**, **Gemini Pro (via Google Generative AI)**, and **psycopg2** for PostgreSQL integration.
+---
 
+## 🚀 Features
 
-## 📁 Project Structure
+- AI-assisted query handling
+- SQL database integration
+- Modular code structure:
+  - `app.py` runs the application
+  - `query_agent.py` processes queries
+  - `sql.py` manages database functions
+- Configurable environment via `.env`
 
-- app.py
-- query_agent.py
-- sql.py
-- requirements.txt
-- .env # Environment variables
+---
 
+## 🛠️ Installation
 
-## ⚙️ Features
-- Natural language to SQL conversion
-- PostgreSQL compatibility
-- Theme toggle (Dark/Light)
-- Follow-up prompts and chat history
-- Markdown to HTML table formatting
-- Safe SQL execution and sanitization
+1. **Clone the repository**
+   ```bash
+   git clone <repo_url>
+   cd AI-Assisted-Chatbot-main
+Set up a virtual environment (optional but recommended)
 
-## 📦 Dataset
-This project uses the Pagila PostgreSQL dataset, a rich sample schema for DVD rental businesses.
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+Install dependencies
 
-## 📜 License
-This project is licensed under the MIT License.
+bash
+Copy code
+pip install -r requirements.txt
+Configure environment variables
+Create a .env file in the project root (already included in this repo).
+Add necessary variables such as API keys and database credentials.
+
+▶️ Usage
+Run the chatbot with:
+
+bash
+Copy code
+python app.py
+The chatbot will start and process user queries.
+
+Queries are handled via query_agent.py, which may interact with a SQL database through sql.py.
+
+📦 Requirements
+Dependencies are listed in requirements.txt.
+Install them using:
+
+bash
+Copy code
+pip install -r requirements.txt
+⚙️ Files Overview
+app.py – Entry point, orchestrates chatbot execution.
+
+query_agent.py – Contains logic for AI-based query handling.
+
+sql.py – Manages database connections and SQL operations.
+
+requirements.txt – Python dependencies required for the project.
+
+.env – Stores sensitive environment variables (not shared publicly).
+
+📌 Notes
+Make sure to properly configure the .env file before running.
+
+Database setup may be required depending on your use case.
+
+This project is intended as a starting point for AI + SQL chatbot integration.
+
+📝 License
+This project is under MIT License.

@@ -65,25 +65,6 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 2. **Open your browser** and navigate to the URL shown in the terminal (usually `http://localhost:8501`)
 
----
-
-## 📦 Requirements
-Dependencies are listed in requirements.txt. Install them using:
-
-bash
-Copy code
-pip install -r requirements.txt
-⚙️ Files Overview
-app.py – Entry point, orchestrates chatbot execution
-
-query_agent.py – Contains logic for AI-based query handling
-
-sql.py – Manages database connections and SQL operations
-
-requirements.txt – Python dependencies required for the project
-
-.env – Stores sensitive environment variables (not shared publicly)
-
 --- 
 
 ## 📝 License

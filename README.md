@@ -15,17 +15,20 @@ AI-Assisted-Chatbot-main/
 │── .env # Environment variables (API keys, DB configs)
 │── README.md # Project documentation
 
+yaml
+Copy code
+
 ---
 
 ## 🚀 Features
 
-- AI-assisted query handling
-- SQL database integration
+- AI-assisted query handling  
+- SQL database integration  
 - Modular code structure:
   - `app.py` runs the application
   - `query_agent.py` processes queries
-  - `sql.py` manages database functions
-- Configurable environment via `.env`
+  - `sql.py` manages database functions  
+- Configurable environment via `.env`  
 
 ---
 
@@ -62,22 +65,21 @@ The chatbot will start and process user queries.
 Queries are handled via query_agent.py, which may interact with a SQL database through sql.py.
 
 📦 Requirements
-Dependencies are listed in requirements.txt.
-Install them using:
+Dependencies are listed in requirements.txt. Install them using:
 
 bash
 Copy code
 pip install -r requirements.txt
 ⚙️ Files Overview
-app.py – Entry point, orchestrates chatbot execution.
+app.py – Entry point, orchestrates chatbot execution
 
-query_agent.py – Contains logic for AI-based query handling.
+query_agent.py – Contains logic for AI-based query handling
 
-sql.py – Manages database connections and SQL operations.
+sql.py – Manages database connections and SQL operations
 
-requirements.txt – Python dependencies required for the project.
+requirements.txt – Python dependencies required for the project
 
-.env – Stores sensitive environment variables (not shared publicly).
+.env – Stores sensitive environment variables (not shared publicly)
 
 📌 Notes
 Make sure to properly configure the .env file before running.
@@ -87,4 +89,4 @@ Database setup may be required depending on your use case.
 This project is intended as a starting point for AI + SQL chatbot integration.
 
 📝 License
-This project is under MIT License.
+This project is under the MIT License.

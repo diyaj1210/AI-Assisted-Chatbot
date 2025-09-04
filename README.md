@@ -5,18 +5,18 @@ It provides a simple interface to run natural language queries and fetch structu
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-AI-Assisted-Chatbot-main/
-│── app.py # Main entry point to run the chatbot
-│── query_agent.py # Core logic for handling user queries
-│── sql.py # SQL helper functions for database interaction
-│── requirements.txt # Python dependencies
-│── .env # Environment variables (API keys, DB configs)
-│── README.md # Project documentation
-
-yaml
-Copy code
+```
+AI-Assisted-Chatbot/
+├── app.py                 # Main Streamlit application
+├── query_agent.py         # Basic Gemini chat (fallback)
+├── sql.py                 # SQL helper functions for database interaction
+├── requirements.txt       # Python dependencies
+├── README.md              # Project Documentation
+├── .env                   # Environment variables (create this)
+└── .gitignore             # Git ignore rules
+```
 
 ---
 
@@ -32,37 +32,38 @@ Copy code
 
 ---
 
-## 🛠️ Installation
+## 🚀 Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repo_url>
-   cd AI-Assisted-Chatbot-main
-Set up a virtual environment (optional but recommended)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/AI-Assisted-Chatbot.git
+cd AI-Assisted-Chatbot
+```
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate   # On macOS/Linux
-venv\Scripts\activate      # On Windows
-Install dependencies
-
-bash
-Copy code
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-Configure environment variables
-Create a .env file in the project root (already included in this repo).
-Add necessary variables such as API keys and database credentials.
+```
 
-## ▶️ Usage
-Run the chatbot with:
+### 3. Set Up Environment Variables
+Create a `.env` file in the project root and add your Google Gemini API key:
+```env
+GOOGLE_API_KEY=your_gemini_api_key_here
+```
 
-bash
-Copy code
-python app.py
-The chatbot will start and process user queries.
+**How to get your Google Gemini API key:**
+1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy the generated key to your `.env` file
 
-Queries are handled via query_agent.py, which may interact with a SQL database through sql.py.
+## 🎯 Usage
+1. **Start the Streamlit app:**
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **Open your browser** and navigate to the URL shown in the terminal (usually `http://localhost:8501`)
 
 ---
 
@@ -82,15 +83,6 @@ sql.py – Manages database connections and SQL operations
 requirements.txt – Python dependencies required for the project
 
 .env – Stores sensitive environment variables (not shared publicly)
-
----
-
-## 📌 Notes
-Make sure to properly configure the .env file before running.
-
-Database setup may be required depending on your use case.
-
-This project is intended as a starting point for AI + SQL chatbot integration.
 
 --- 
 

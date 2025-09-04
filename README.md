@@ -54,7 +54,7 @@ Configure environment variables
 Create a .env file in the project root (already included in this repo).
 Add necessary variables such as API keys and database credentials.
 
-▶️ Usage
+## ▶️ Usage
 Run the chatbot with:
 
 bash
@@ -64,7 +64,9 @@ The chatbot will start and process user queries.
 
 Queries are handled via query_agent.py, which may interact with a SQL database through sql.py.
 
-📦 Requirements
+---
+
+## 📦 Requirements
 Dependencies are listed in requirements.txt. Install them using:
 
 bash
@@ -81,12 +83,16 @@ requirements.txt – Python dependencies required for the project
 
 .env – Stores sensitive environment variables (not shared publicly)
 
-📌 Notes
+---
+
+## 📌 Notes
 Make sure to properly configure the .env file before running.
 
 Database setup may be required depending on your use case.
 
 This project is intended as a starting point for AI + SQL chatbot integration.
 
-📝 License
+--- 
+
+## 📝 License
 This project is under the MIT License.
